@@ -4,6 +4,7 @@ import WalletConnection from '@/components/WalletConnection';
 import RegionSelector from '@/components/RegionSelector';
 import TransactionLoader from '@/components/TransactionLoader';
 import AITaxAssistant from '@/components/AITaxAssistant';
+import TaxReport from '@/components/TaxReport';
 
 const Index = () => {
   return (
@@ -28,6 +29,11 @@ const Index = () => {
           <WalletConnection />
           <RegionSelector />
           <TransactionLoader />
+        </div>
+
+        {/* Middle Row - Tax Report */}
+        <div className="mb-8">
+          <TaxReport />
         </div>
 
         {/* Bottom Row - AI Assistant */}
